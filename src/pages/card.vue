@@ -1,5 +1,8 @@
 <script setup lang="ts">
   import type { Booking } from '../types' // Adjust the import path based on where your Booking type is defined
+  import ReservationCard3 from '../components/reservation-card-improved.vue'
+  import ReservationCard2 from '../components/reservation-card-svg-approach.vue'
+  import ReservationCard4 from '../components/reservation-card-update.vue'
   import ReservationCard from '../components/ReservationCard.vue'
   const booking: Booking = {
     bookingId: 'BK_10231',
@@ -26,7 +29,10 @@
 
 <template>
   <div class="page-bg">
-    <ReservationCard><div style="color: white;">Hello</div></ReservationCard>
+    <ReservationCard><div style="color: white;">Hello 1</div></ReservationCard>
+    <ReservationCard2><div style="color: white;">Hello 2</div></ReservationCard2>
+    <ReservationCard3><div style="color: white;">Hello 3</div></ReservationCard3>
+    <ReservationCard4><div style="color: white;">Hello 4</div></ReservationCard4>
   </div>
 </template>
 
@@ -40,5 +46,6 @@
     height: 100%;
     align-items: center;
     display: flex;
+    column-gap: 20px;
   }
 </style>

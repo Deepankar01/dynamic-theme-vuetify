@@ -1,6 +1,6 @@
 <template>
   <div class="reservation-card">
-    <!-- <span aria-hidden="true" class="grain" /> -->
+    <span aria-hidden="true" class="grain" />
     <slot />
   </div>
 </template>
@@ -30,21 +30,25 @@
   pointer-events: none;
 
   background: radial-gradient(
-      circle 278px at 77.87% 65%,
-      rgba(0, 144, 154, 0.8),
-      transparent 75%
+      278px 278px at 77.87% 65%,
+      rgba(0, 144, 154, 0.75) 0%,
+      rgba(0, 144, 154, 0.35) 45%,
+      rgba(0, 144, 154, 0) 75%
     ),
     radial-gradient(
-      circle 315px at 77.87% 15%,
-      rgba(31, 127, 189, 0.8),
-      transparent 75%
+      315px 315px at 77.87% 15%,
+      rgba(31, 127, 189, 0.7) 0%,
+      rgba(31, 127, 189, 0.3) 45%,
+      rgba(31, 127, 189, 0) 75%
     ),
     radial-gradient(
-      circle 228px at 10% 40%,
-      rgba(132, 203, 248, 0.5),
-      transparent 100%
+      228px 228px at 10% 40%,
+      rgba(132, 203, 248, 0.45) 0%,
+      rgba(132, 203, 248, 0.18) 50%,
+      rgba(132, 203, 248, 0) 80%
     );
-  filter: blur(10px);
+
+  filter: blur(18px);
   opacity: 1;
   mix-blend-mode: color-burn; /* gives that “liquid light” feel */
 }

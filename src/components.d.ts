@@ -15,6 +15,9 @@ declare module 'vue' {
     Card: typeof import('./components/card.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     ReservationCard: typeof import('./components/ReservationCard.vue')['default']
+    ReservationCardImproved: typeof import('./components/reservation-card-improved.vue')['default']
+    ReservationCardSvgApproach: typeof import('./components/reservation-card-svg-approach.vue')['default']
+    ReservationCardUpdate: typeof import('./components/reservation-card-update.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

@@ -21,6 +21,7 @@ declare module 'vue-router/auto-routes' {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/auth/uae-pass/callback': RouteRecordInfo<'/auth/uae-pass/callback', '/auth/uae-pass/callback', Record<never, never>, Record<never, never>>,
     '/authorize': RouteRecordInfo<'/authorize', '/authorize', Record<never, never>, Record<never, never>>,
+    '/card': RouteRecordInfo<'/card', '/card', Record<never, never>, Record<never, never>>,
   }
 
   /**
@@ -44,6 +45,10 @@ declare module 'vue-router/auto-routes' {
     }
     'src/pages/authorize.vue': {
       routes: '/authorize'
+      views: never
+    }
+    'src/pages/card.vue': {
+      routes: '/card'
       views: never
     }
   }

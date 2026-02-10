@@ -13,7 +13,7 @@ export interface Theme {
 }
 
 export async function fetchThemes (): Promise<Theme[]> {
-  const response = await fetch('http://localhost:3001/themes')
+  const response = await fetch('http://localhost:3001/api/config/theme')
   if (!response.ok) {
     throw new Error('Failed to fetch themes')
   }
@@ -22,7 +22,7 @@ export async function fetchThemes (): Promise<Theme[]> {
 
 export async function fetchThemeById (id: string): Promise<Theme | null> {
   try {
-    const response = await fetch(`http://localhost:3001/themes?id=${id}`)
+    const response = await fetch(`http://localhost:3001/api/config/theme?id=${id}`)
     if (!response.ok) {
       return null
     }

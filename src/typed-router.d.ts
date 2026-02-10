@@ -19,6 +19,8 @@ declare module 'vue-router/auto-routes' {
    */
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
+    '/auth/uae-pass/callback': RouteRecordInfo<'/auth/uae-pass/callback', '/auth/uae-pass/callback', Record<never, never>, Record<never, never>>,
+    '/authorize': RouteRecordInfo<'/authorize', '/authorize', Record<never, never>, Record<never, never>>,
   }
 
   /**
@@ -34,6 +36,14 @@ declare module 'vue-router/auto-routes' {
   export interface _RouteFileInfoMap {
     'src/pages/index.vue': {
       routes: '/'
+      views: never
+    }
+    'src/pages/auth/uae-pass/callback.vue': {
+      routes: '/auth/uae-pass/callback'
+      views: never
+    }
+    'src/pages/authorize.vue': {
+      routes: '/authorize'
       views: never
     }
   }
